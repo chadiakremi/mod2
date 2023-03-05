@@ -51,13 +51,13 @@ header li a{
     transition: 2s ease;
 }
 header li a:hover{
-    color: royalblue;
+    color: goldenrod;
     text-decoration: none;
     padding: 13px;
 }
 
 .CONTACT{
-    background-color: goldenrod;
+    
     border-radius: 30px;
     float: right;
     position: relative;
@@ -81,12 +81,13 @@ header li a:hover{
   background-color: #000;
 }
 .beard{
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
 margin-left: 100px;
 
-  
-
+}
+.line{
+  justify-content: center;
 }
      </style>
 
@@ -134,17 +135,32 @@ margin-left: 100px;
                 <div class="row align-items-center g-lg-5 py-5">
                   <div class="col-lg-7 text-center text-lg-start">
                     <h1 class="display-4 fw-bold lh-1 mb-3">I AM A DEVELOPER</h1>
-                    <p class="col-lg-10 fs-4">My name is CHADI, and I have 10 years of experience as a software engineer. Currently, I am working as a software engineer in IBM for the last 5 years.</p>
+                    <p id="line" class="col-lg-10 fs-6" >My name is CHADI, and I have 10 years of experience as a software engineer. Currently, I am working as a software engineer in IBM for the last 5 years.</p>
+                    <img class="beard"  src="./beard.jpg">
                   </div>
                   <div class="col-md-10 mx-auto col-lg-5">
                     
-                  <form  action="https://formspree.io/f/xrgvkoqw" method="post">
-                      <label class="email" for="email"><strong>Your Email</strong></label>
-                      <input name="Email" id="email" type="email">
-                      <button class="submit" type="submit">Submit</button>
-                      <img class="beard"  src="./beard.jpg">
-                      
-                    </form>
+                    <form class="border rounded p-5 mt-5" action="https://formspree.io/f/xoqzwyoq" method="POST">
+                      <h1 class="mb-4">Register</h1>
+                      <div class="mb-3">
+                          <label class="form-label">Firstname</label>
+                          <input name="firstname" type="text" class="form-control">
+                      </div>
+                      <div class="mb-3">
+                          <label class="form-label">Lastname</label>
+                          <input  name="lastname" type="text" class="form-control">
+                      </div>
+                      <div class="mb-3">
+                          <label class="form-label">Email address</label>
+                          <input name="email" type="email" class="form-control">
+                          <div class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                          <label class="form-label">Phone</label>
+                          <input name="phone" type="text" class="form-control">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
                   </div>
                 </div>
               </div> 
